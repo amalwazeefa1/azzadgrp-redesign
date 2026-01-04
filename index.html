@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azzad Group</title>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#008a47",
+            "surface-light": "#f4f4f4",
+            "surface-dark": "#2d2d2d",
+          },
+          fontFamily: {
+            display: ["Playfair Display", "serif"],
+            body: ["Lato", "sans-serif"],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .hide-scrollbar::-webkit-scrollbar { display: none; }
+    .hide-scrollbar { scrollbar-width: none; }
+  </style>
+</head>
+
+<body class="font-body bg-white text-gray-800">
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b">
+  <div class="max-w-md md:max-w-3xl lg:max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
+    <img src="/assets/azzad-logo.png" class="h-10" />
+    <div class="flex items-center gap-3">
+      <button class="bg-primary text-white text-xs px-4 py-2 rounded-full font-bold">
+        ORDER ONLINE
+      </button>
+      <span class="material-icons-round md:hidden">menu</span>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main class="pt-16 pb-24 max-w-md md:max-w-3xl lg:max-w-6xl mx-auto">
+
+  <!-- HERO -->
+  <section class="relative h-[60vh] md:h-[70vh] lg:h-[80vh]">
+    <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2"
+         class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/60 flex items-end p-6">
+      <div>
+        <span class="text-primary font-bold text-sm">Welcome to Azzad</span>
+        <h1 class="text-white font-display text-3xl md:text-4xl lg:text-5xl font-bold">
+          Excellence in<br>Food Trading
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- WE SERVE -->
+  <section class="px-4 py-10 bg-surface-light">
+    <h2 class="font-display text-xl font-bold mb-6">We Serve</h2>
+
+    <div class="flex md:grid md:grid-cols-5 gap-6 overflow-x-auto md:overflow-visible hide-scrollbar">
+      <!-- item -->
+      <div class="min-w-[80px] flex flex-col items-center">
+        <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center">
+          <span class="material-icons-round text-primary">restaurant</span>
+        </div>
+        <span class="text-xs mt-2">Restaurants</span>
+      </div>
+      <div class="min-w-[80px] flex flex-col items-center">
+        <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center">
+          <span class="material-icons-round text-primary">hotel</span>
+        </div>
+        <span class="text-xs mt-2">Hotels</span>
+      </div>
+      <div class="min-w-[80px] flex flex-col items-center">
+        <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center">
+          <span class="material-icons-round text-primary">local_cafe</span>
+        </div>
+        <span class="text-xs mt-2">Cafes</span>
+      </div>
+      <div class="min-w-[80px] flex flex-col items-center">
+        <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center">
+          <span class="material-icons-round text-primary">store</span>
+        </div>
+        <span class="text-xs mt-2">Retail</span>
+      </div>
+      <div class="min-w-[80px] flex flex-col items-center">
+        <div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center">
+          <span class="material-icons-round text-primary">room_service</span>
+        </div>
+        <span class="text-xs mt-2">Catering</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="px-4 py-12">
+    <h2 class="font-display text-2xl text-center font-bold mb-8">Our Categories</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div class="relative aspect-square rounded-xl overflow-hidden shadow">
+        <img src="https://images.unsplash.com/photo-1604908177522-3d62c01c2e22"
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/60 flex items-end p-3">
+          <span class="text-white font-bold">Meat</span>
+        </div>
+      </div>
+      <div class="relative aspect-square rounded-xl overflow-hidden shadow">
+        <img src="https://images.unsplash.com/photo-1516685304081-de7947d419d4"
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/60 flex items-end p-3">
+          <span class="text-white font-bold">Seafood</span>
+        </div>
+      </div>
+      <div class="relative aspect-square rounded-xl overflow-hidden shadow">
+        <img src="https://images.unsplash.com/photo-1604909053263-7b3ed3c65a3c"
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/60 flex items-end p-3">
+          <span class="text-white font-bold">Poultry</span>
+        </div>
+      </div>
+      <div class="relative aspect-square rounded-xl overflow-hidden shadow">
+        <img src="https://images.unsplash.com/photo-1615484477778-ca3b77940c25"
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/60 flex items-end p-3">
+          <span class="text-white font-bold">Dairy</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- BOTTOM NAV (MOBILE ONLY) -->
+<div class="fixed bottom-0 left-0 right-0 md:hidden bg-white border-t">
+  <div class="flex justify-around py-2">
+    <span class="material-icons-round text-primary">home</span>
+    <span class="material-icons-round text-gray-400">category</span>
+    <span class="material-icons-round text-gray-400">shopping_cart</span>
+    <span class="material-icons-round text-gray-400">person</span>
+  </div>
+</div>
+
+</body>
+</html>
